@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React in HTML</title>
+</head>
+
+<body>
+    
+    
+    <!-- writing in html -->
+    <div id="root"> hello world </div>
+
+
+<!-- wriitng in javascript -->
+
+    <!-- <script>
+        let Root = document.getElementById("root")
+        Root.innerHTML = "<h2>Hello world</h2>"
+    </script>
+    <script>
+        let heading = document.createElement("h1")
+        heading.innerHTML = "namaste react"
+        Root.appendChild(heading)
+    </script> -->
+    
+
+
+
+    <!--  writing in react -->
+    <script
+    crossorigin src="https://unpkg.com/react@18/umd/react.development.js">
+    </script>
+
+    <script 
+    crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        let h1 = React.createElement("h1",{},"namaste react")
+        console.log(h1)
+       let rooty =  ReactDOM.createRoot(document.getElementById("root"));
+        rooty.render(h1);
+    </script>
+</body>
+
+</html>
